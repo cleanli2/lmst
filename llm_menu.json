@@ -1,0 +1,167 @@
+
+{
+  "menu_items": [
+    {
+      "label": "gemma-4-26B-it-qat-UD-Q4_K_XL.gguf 32k 90t/s, single GPU, pic",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mmproj-F16.gguf -lv 4 -ngl 99 -c 32400 -dev CUDA0 -sm none -fa on -np 1 -ctk f16 -ctv f16 --no-mmap"
+    },
+    {
+      "label": "gemma-4-26B-it-qat-UD-Q4_K_XL.gguf 32k 90t/s, single GPU, pic, think budget 9000",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mmproj-F16.gguf -lv 4 -ngl 99 -c 32400 -dev CUDA0 -sm none -fa on -np 1 -ctk f16 -ctv f16 --no-mmap --reasoning-budget 9000"
+    },
+    {
+      "label": "gemma-4-26B-it-qat-UD-Q4_K_XL.gguf 32k 110t/s, single GPU, pic, mtp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mmproj-F16.gguf -md /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -lv 4 -ngl 99 -c 32400 -dev CUDA0 -fa on -np 1 -ctk f16 -ctv f16 --no-mmap -sm none"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 26k 26t/s new model and new llamacpp, single GPU, no pic",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf -lv 4 -ngl 99 -c 26400 -dev CUDA0 -fa on -np 1 -ctk f16 -ctv f16"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 26k 26t/s old model and new llamacpp, single GPU, no pic",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf  -lv 4 -ngl 99 -c 26400 -dev CUDA0 -fa on -np 1 -ctk f16 -ctv f16"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 10k 43t/s new model and new llamacpp, single GPU, no pic, mtp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf -lv 4  -ngl 99 -dev CUDA0 -np 1 -fa on -ctk f16 -ctv f16 -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngld 99 -devd CUDA0 -c 10800 -sm none"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 10k 43t/s old model and new llamacpp, single GPU, no pic, mtp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf -lv 4  -ngl 99 -dev CUDA0 -np 1 -fa on -ctk f16 -ctv f16 -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngld 99 -devd CUDA0 -c 10800"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 3k 26t/s new model and new llamacpp, single GPU, pic",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mmproj-BF16.gguf -lv 4  -ngl 99 -c 3000  -dev CUDA0 -fa on -np 1"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 6k 41t/s new model and new llamacpp, single GPU, pic, mtp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mmproj-BF16.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -lv 4 -ngld 99 -ngl 99 -c 6000 -sm none -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 31t/s mtp new model and new llamacpp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mmproj-BF16.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -lv 4 -ngld 99 -ngl 99 -c 4000 -devd CUDA1 -sm layer -ts 10,1 -c 20000 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 31t/s mtp new model",
+      "command": "llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-GGUF/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mmproj-BF16.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -lv 4 -ngld 99 -ngl 99 -c 4000 -devd CUDA1 -sm layer -ts 10,1 -c 20000 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 31t/s mtp, new llamacpp, old model",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mmproj-BF16.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngl 99 -ngld 99 --spec-draft-device CUDA1 --tensor-split 49,5 -sm layer -c 20000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 32k 33t/s mtp, new llamacpp, old model, pic, nommap",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mmproj-BF16.gguf -lv 4  -ngl 99 -dev CUDA0,CUDA1 -np 1 -fa on -ctk f16 -ctv f16 -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngld 99 -devd CUDA1 -c 32800 -sm layer -ts 58,3 -ub 256 --direct-io"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 70k 31t/s mtp, new llamacpp, old model, pic, nommap",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mmproj-BF16.gguf -lv 4  -ngl 99 -dev CUDA0,CUDA1 -np 1 -fa on -ctk f16 -ctv f16 -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngld 99 -devd CUDA1 -c 70800 -sm layer -ts 50,11 -ub 256 --direct-io"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 31t/s mtp, old llamacpp, old model",
+      "command": "llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mmproj-BF16.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngl 99 -ngld 99 --spec-draft-device CUDA1 --tensor-split 49,5 -sm layer -c 20000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-Q6_K.gguf 7424 9t/s mtp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q6_K.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -lv 4 -ngld 99 -ngl 59 --tensor-split 49,10 --split-mode layer -b 16 -c 2024 -np 1 --no-mmap -devd CUDA1"
+    },
+    {
+      "label": "gemma-4-31B-it-Q6_K.gguf 7424 9t/s",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q6_K.gguf -ngl 60 --tensor-split 49,11 --split-mode layer -b 16 -lv 4 -c 7424 -np 1 --no-mmap"
+    },
+    {
+      "label": "gemma-4-31B-it-IQ4_XS.gguf 32k 25t/s",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-IQ4_XS.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-Q4_K_M.gguf 8k 24t/s single-GPU",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q4_K_M.gguf --ctx-size 8384 -sm none -mg 0 -ngl 99 -lv 4 -np 1 --no-warmup"
+    },
+    {
+      "label": "google-gemma-4-31B-it-qat-q4_0-gguf 8k 24t/s single-GPU",
+      "command": "llama-server -m /f/models/google-gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --ctx-size 8384 -sm none -mg 0 -ngl 99 -lv 4 -np 1 --no-warmup --no-mmap"
+    },
+    {
+      "label": "gemma-4-31B-it-Q4_K_M.gguf 50k 18t/s",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q4_K_M.gguf --ctx-size 50000 --tensor-split 44,10 --split-mode layer -ngl 99 -lv 4 -np 1 --no-warmup"
+    },
+    {
+      "label": "gemma-4-31B-it-Q4_K_M.gguf 50k 18t/s pic",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q4_K_M.gguf --mmproj /f/models/gemma-4-31B-it-GGUF/mmproj-BF16.gguf --ctx-size 50000 --tensor-split 44,10 --split-mode layer -ngl 99 -lv 4 -np 1 --no-warmup"
+    },
+    {
+      "label": "gemma-4-31B-it-Q4_K_M.gguf 20k 20t/s draft-simple",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q4_K_M.gguf -md /f/models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf --spec-draft-n-max 1 --n-gpu-layers-draft 99 --ctx-size 20000 --tensor-split 44,10 --split-mode layer -ngl 99 -lv 4 -np 1 --no-warmup --spec-type draft-simple"
+    },
+    {
+      "label": "gemma-4-31B-it-Q4_K_M.gguf 20k 20t/s draft-simple pic",
+      "command": "llama-server -m /f/models/gemma-4-31B-it-GGUF/gemma-4-31B-it-Q4_K_M.gguf --mmproj /f/models/gemma-4-31B-it-GGUF/mmproj-BF16.gguf -md /f/models/gemma-4-E2B-it-GGUF/gemma-4-E2B-it-Q4_K_M.gguf --spec-draft-n-max 1 --n-gpu-layers-draft 99 --ctx-size 20000 --tensor-split 44,10 --split-mode layer -ngl 99 -lv 4 -np 1 --no-warmup --spec-type draft-simple"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 16t/s pic",
+      "command": "llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mmproj-BF16.gguf -ngl 99 --tensor-split 49,6 --split-mode layer -c 20000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-31B-it-qat-UD-Q4_K_XL.gguf 20k 11t/s mtp",
+      "command": "llama-server -m /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/gemma-4-31B-it-qat-UD-Q4_K_XL.gguf -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 1 -ngl 99 --tensor-split 49,6 --split-mode layer -c 20000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "gemma-4-12b-it-BF16.gguf 47k 15t/s pic",
+      "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF/gemma-4-12b-it-BF16.gguf --mmproj /f/models/gemma-4-12b-it-GGUF/mmproj-BF16.gguf -ngl 99 -v --tensor-split 42,7 --split-mode layer -lv 4 -c 47104 -np 1"
+    },
+    {
+      "label": "gemma-4-12b-it-Q8.gguf 47k 25t/s pic, single GPU",
+      "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF/gemma-4-12b-it-Q4_K_M.gguf --mmproj /f/models/gemma-4-12b-it-GGUF/mmproj-BF16.gguf -ngl 99 -v --tensor-split 42,0 --split-mode layer -lv 4 -c 97104 -np 1"
+    },
+    {
+      "label": "gemma-4-26B-A4B-it-MXFP4_MOE.gguf 100k 69t/s pic",
+      "command": "llama-server -m /f/models/gemma-4-26B-A4B-it-GGUF/gemma-4-26B-A4B-it-MXFP4_MOE.gguf --mmproj /f/models/gemma-4-26B-A4B-it-GGUF/mmproj-F16.gguf -ngl 99 --tensor-split 30,0 --split-mode layer -lv 4 -c 100000 -np 1"
+    },
+    {
+      "label": "google_gemma-4-26B-A4B-it-qat-q4_0-gguf 100k 73t/s pic",
+      "command": "llama-server -m /g/m/google_gemma-4-26B-A4B-it-qat-q4_0-gguf/gemma-4-26B_q4_0-it.gguf --mmproj /g/m/google_gemma-4-26B-A4B-it-qat-q4_0-gguf/gemma-4-26B-it-mmproj.gguf -ngl 99 --tensor-split 30,0 --split-mode layer -lv 4 -c 100000 -np 1 --direct-io"
+    },
+    {
+      "label": "Qwen3.6-35B-A3B-MXFP4_MOE.gguf 100k 69t/s pic",
+      "command": "llama-server -m /f/models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-MXFP4_MOE.gguf --mmproj /f/models/Qwen3.6-35B-A3B-GGUF/mmproj-BF16.gguf -ngl 99 --tensor-split 42,9 --split-mode layer -lv 4 -c 10000 -np 1"
+    },
+    {
+      "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 25t/s",
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 31-34t/s mtp",
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 36t/s mtp max=1",
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 1"
+    },
+    {
+      "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 38t/s mtp max=2",
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 2"
+    },
+    
+    {
+      "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 33t/s mtp max=3",
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 3"
+    },
+    {
+      "label": "gpt-oss-20b-GGUF 32k 87t/s",
+      "command": "llama-server -m /f/models/gpt-oss-20b-GGUF/gpt-oss-20b-F16.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 -lv 4 -np 1 -fa on"
+    },
+    {
+      "label": "Nemotron-3-Nano-30B-A3B-Q4_K_M.gguf 32k 72t/s",
+      "command": "llama-server -m /f/models/Nemotron-3-Nano-30B-A3B-GGUF/Nemotron-3-Nano-30B-A3B-Q4_K_M.gguf -ngl 99 --tensor-split 49,10 --split-mode layer -c 32000 -lv 4 -np 1 -fa on --no-mmap"
+    },
+    {
+      "label": "gemma-4-26B-A4B-it-BF16-00001-of-00002.gguf 18k 8t/s, no pic, mtp, new llama-cpp",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/gemma-4-26B-A4B-it-GGUF/BF16/gemma-4-26B-A4B-it-BF16-00001-of-00002.gguf -lv 4 --no-mmap --direct-io -ngl all -sm layer -ts 22,3 --n-cpu-moe 18 -fa on -np 1 -md /f/models/gemma-4-26B-A4B-it-GGUF/BF16/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp --spec-draft-n-max 1 -devd CUDA1 -c 18000"
+    },
+    {
+      "label": "EXIT",
+      "command": "exit"
+    }
+  ]
+}
+
