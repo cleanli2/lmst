@@ -110,7 +110,19 @@
       "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF/gemma-4-12b-it-BF16.gguf --mmproj /f/models/gemma-4-12b-it-GGUF/mmproj-BF16.gguf -ngl 99 -v --tensor-split 42,7 --split-mode layer -lv 4 -c 47104 -np 1"
     },
     {
-      "label": "gemma-4-12b-it-Q8.gguf 47k 25t/s pic, single GPU",
+      "label": "gemma-4-12b-it-BF16.gguf 8k 22t/s pic, mtp",
+      "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF/gemma-4-12b-it-BF16.gguf --mmproj /f/models/gemma-4-12b-it-GGUF/mmproj-BF16.gguf -md /f/models/gemma-4-12b-it-GGUF_260818/mtp-gemma-4-12b-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -devd CUDA1 -ngld 99 -ngl 99 -v --tensor-split 42,7 --split-mode layer -lv 4 -c 8104 -np 1"
+    },
+    {
+      "label": "gemma-4-12b-it-Q8.gguf 47k 25t/s pic, ",
+      "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF_260818/gemma-4-12b-it-Q8_0.gguf --mmproj /f/models/gemma-4-12b-it-GGUF_260818/mmproj-F16.gguf -ngl 99 -v --tensor-split 42,0 --split-mode layer -lv 4 -c 97104 -np 1"
+    },
+    {
+      "label": "gemma-4-12b-it-Q8.gguf 97k 55t/s pic, mtp",
+      "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF_260818/gemma-4-12b-it-Q8_0.gguf --mmproj /f/models/gemma-4-12b-it-GGUF_260818/mmproj-F16.gguf -md /f/models/gemma-4-12b-it-GGUF_260818/mtp-gemma-4-12b-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -dev CUDA0 -devd CUDA0 -ngl 99 -sm none -lv 4 -c 97104 -np 1"
+    },
+    {
+      "label": "gemma-4-12b-it-Q4.gguf 47k 25t/s pic, single GPU",
       "command": "llama-server -m /f/models/gemma-4-12b-it-GGUF/gemma-4-12b-it-Q4_K_M.gguf --mmproj /f/models/gemma-4-12b-it-GGUF/mmproj-BF16.gguf -ngl 99 -v --tensor-split 42,0 --split-mode layer -lv 4 -c 97104 -np 1"
     },
     {
