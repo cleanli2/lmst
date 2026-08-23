@@ -1,12 +1,16 @@
 {
   "menu_items": [
     {
-      "label": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf ?k 60t/s",
-      "command": "/Users/cleanli/f/llama-b9840/llama-server -m ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf -md ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp  -lv 4 -np 1 -fa on --spec-draft-n-max 1"
+      "label": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf 262k 60t/s",
+      "command": "/Users/cleanli/f/llama-b9840/llama-server -m ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf -md ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp  -lv 4 -np 1 -fa on --spec-draft-n-max 1 -ngl 99 -ngld 99"
     },
     {
-      "label": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf ?k 60t/s 2",
+      "label": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf 262k 52t/s 2",
       "command": "/Users/cleanli/f/llama-b9840/llama-server -m ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf -md ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp  -lv 4 -np 1 -fa on --spec-draft-n-max 2"
+    },
+    {
+      "label": "gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf 262k 52t/s 2, pic",
+      "command": "/Users/cleanli/f/llama-b9840/llama-server -m ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --mmproj ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mmproj-BF16.gguf -md ~/f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mtp-gemma-4-26B-A4B-it.gguf --spec-type draft-mtp  -lv 4 -np 1 -fa on --spec-draft-n-max 2"
     },
     {
       "label": "gemma-4-26B-A4B-it-MXFP4_MOE.gguf 100k 30t/s pic",
