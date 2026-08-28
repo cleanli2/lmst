@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the JSON configuration file
-CONFIG_FILE="/c/f/s/llama-bin-win/llm_menu.json"
+CONFIG_FILE="/c/f/s/lmst/llm_menu.json"
 
 # Check if jq is installed
 if ! command -v jq &> /dev/null; then
