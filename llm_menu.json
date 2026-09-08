@@ -1,5 +1,18 @@
 {
+	
   "menu_items": [
+    {
+      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 8k 34t/s, single GPU, pic, mtp",
+      "command": "llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf  -lv 4 -ngl 99 -sm none -c 8000 -ctk q4_0 -ctv q4_0 -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 --no-mmap -np 1"
+    },
+    {
+      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 4k 24t/s, single GPU, pic",
+      "command": "llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf --no-mmap -lv 4 -ngl 99 -sm none -fa on -np 1"
+    },
+    {
+      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 22k 24t/s, single GPU, pic, q8_0",
+      "command": "llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf --no-mmap -lv 4 -ngl 99 -sm none -fa on -np 1 -c 22000 -ctk q8_0 -ctv q8_0"
+    },
     {
       "label": "gemma-4-26B-it-qat-UD-Q4_K_XL.gguf 32k 90t/s, single GPU, pic",
       "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/gemma-4-26B-A4B-it-qat-UD-Q4_K_XL.gguf --mmproj /f/models/unsloth_gemma-4-26B-A4B-it-qat-GGUF/mmproj-F16.gguf -lv 4 -ngl 99 -c 32400 -dev CUDA0 -sm none -fa on -np 1 -ctk f16 -ctv f16 --no-mmap"
@@ -154,7 +167,7 @@
     },
     {
       "label": "Qwen3.6-27B-MTP-Q4_K_M.gguf 32k 38t/s mtp max=2",
-      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 2"
+      "command": "llama-server -m /f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99 --tensor-split 49,0 --split-mode layer -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 2 --no-mmap --direct-io"
     },
     
     {
