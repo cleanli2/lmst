@@ -150,6 +150,10 @@
       "command": "llama-server -m /g/m/google_gemma-4-26B-A4B-it-qat-q4_0-gguf/gemma-4-26B_q4_0-it.gguf --mmproj /g/m/google_gemma-4-26B-A4B-it-qat-q4_0-gguf/gemma-4-26B-it-mmproj.gguf -ngl 99 --tensor-split 30,0 --split-mode layer -lv 4 -c 100000 -np 1 --direct-io"
     },
     {
+      "label": "Qwen3.8-27B-Q4KM.gguf 12k 32t/s",
+      "command": "llama-server -m /f/models/unsloth_qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_K_M.gguf --spec-type draft-mtp -ngl 99 -sm none --spec-draft-n-max 1 -c 12000 -ngl 99 --no-mmap --direct-io -np 1 -fa on"
+    },
+    {
       "label": "Qwen3.6-35B-A3B-MXFP4_MOE.gguf 100k 69t/s pic",
       "command": "llama-server -m /f/models/Qwen3.6-35B-A3B-GGUF/Qwen3.6-35B-A3B-MXFP4_MOE.gguf --mmproj /f/models/Qwen3.6-35B-A3B-GGUF/mmproj-BF16.gguf -ngl 99 --tensor-split 42,9 --split-mode layer -lv 4 -c 10000 -np 1"
     },
