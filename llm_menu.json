@@ -113,6 +113,10 @@
       "command": "/Users/cleanli/f/llama-b9840/llama-server -m /Users/cleanli/f/models/unsloth-Qwen3.6-27B-MTP-GGUF/Qwen3.6-27B-MTP-Q4_K_M.gguf -ngl 99  -c 32000 --spec-type draft-mtp -lv 4 -np 1 -fa on --spec-draft-n-max 3"
     },
     {
+      "label": "Qwen3.8-27B-MTP-Q4_K_M.gguf 32k 9t/s mtp max=2",
+      "command": "/Users/cleanli/f/llama.cpp-b10000/llama-b10151/llama-server -m f/models/unsloth_qwen3.8-27B-GGUF/Qwen3.8-27B-Q4_K_M.gguf -lv 4 -np 1 -ngl 99 --spec-type draft-mtp -fa on --spec-draft-n-max 1"
+    },
+    {
       "label": "EXIT",
       "command": "exit"
     }
