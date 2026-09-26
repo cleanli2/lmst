@@ -2,8 +2,12 @@
 	
   "menu_items": [
     {
-      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 8k 34t/s, single GPU, pic, mtp",
-      "command": "llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf  -lv 4 -ngl 99 -sm none -c 8000 -ctk q4_0 -ctv q4_0 -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 --no-mmap -np 1"
+      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 24k 34t/s, single GPU, pic, mtp",
+      "command": "llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf  -lv 4 -ngl 99 -sm none -c 24000 -ctk q4_0 -ctv q4_0 -md /f/models/unsloth_gemma-4-31B-it-qat-GGUF/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 --no-mmap -np 1"
+    },
+    {
+      "label": "google_gemma-4-31B-it-qat-q4_0-gguf 112k 31t/s mtp, new llamacpp, pic, nommap",
+      "command": "/c/f/s/llama-b10151-bin-win-cuda-12.4-x64/llama-server -m /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B_q4_0-it.gguf --mmproj /f/models/google_gemma-4-31B-it-qat-q4_0-gguf/gemma-4-31B-it-mmproj.gguf   -lv 4  -ngl 99 -dev CUDA0,CUDA1 -np 1 -fa on -ctk q4_0 -ctv q4_0 -md /f/models/unsloth_gemma-4-31B-it-qat-ud-q4kxl-gguf/mtp-gemma-4-31B-it.gguf --spec-type draft-mtp --spec-draft-n-max 2 -ngld 99 -devd CUDA1 -c 112000 -sm layer -ts 55,6 -ub 256 --direct-io --no-mmap"
     },
     {
       "label": "google_gemma-4-31B-it-qat-q4_0-gguf 4k 24t/s, single GPU, pic",
